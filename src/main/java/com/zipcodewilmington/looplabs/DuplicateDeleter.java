@@ -1,5 +1,7 @@
 package com.zipcodewilmington.looplabs;
 
+import java.util.Arrays;
+
 /**
  * Created by leon on 1/25/18.
  */
@@ -10,6 +12,11 @@ public abstract class DuplicateDeleter<T> implements DuplicateDeleterInterface<T
         this.array = intArray;
     }
 
-    abstract public T[] removeDuplicates(int maxNumberOfDuplications);
-    abstract public T[] removeDuplicatesExactly(int exactNumberOfDuplications);
+    public T[] removeDuplicates(int maxNumberOfDuplications) {
+        return array;
+    }
+
+    public T[] removeDuplicatesExactly(int exactNumberOfDuplications) {
+        return array;
+    }
 }
